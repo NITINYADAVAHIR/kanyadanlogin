@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class=" nitin signinbox">
+                <div class="imgbox"><img src="file:///C:/Users/user/Desktop/kanyadan/shutterstock_1053104777.webp"></div>
+                <div class="formbox">
+                    <form>
+                        <h2> Log In</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="password" name="" placeholder="Password">
+                        <input type="submit" value="Login">
+                        <p class="signup">Don't have an account <a href="#" onclick="toggleform();">Sign Up</a></p>
+                    </form>
+                </div>
+                <div class="nitin signupbox">
+
+                    <div class="formbox">
+                        <form>
+                            <h2> Sign Up </h2>
+                            <input type="text" name="" placeholder="Username">
+                            <input type="Email" name="" placeholder="Email">
+                            <input type="date" name="" placeholder="D.O.B">
+                            <input type="password" name="" placeholder=" Create Password">
+                            <input type="password" name="" placeholder="Confirm Password">
+                            <input type="submit" value="Signup">
+                            <p class="signup">Already have an account <a href="#" onclick="toggleform();">Log In</a></p>
+                        </form>
+                    </div>
+                    <div class="imgbox"><img src="file:///C:/Users/user/Desktop/kanyadan/download.jpg"></div>
+                </div>
+            </div>
+            </section>
+            <script type="text/javascript">
+                function toggleform(){
+                    var container =  document.querySelector('.container');
+                    container.classList.toggle('active')
+                }
+                    </script>
+</body>
+
+</html>
