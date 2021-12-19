@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <section>
+        <div>
+            <h1>new registration </h1>
+            <div class="main">
+                <form action="">
+
+                    <div class="name">
+                        <input type="text" name="" id="" placeholder="first name ">
+                        <input type="text" name="" id="" placeholder="last name">
+                    </div>
+                    <input type="text" name="" id="father's name" placeholder="father's name">
+                    <input type="text" name="" id="mother's name " placeholder="mother's name">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Mobile No.">
+                    <input type="text" name="" id="" placeholder="Alt Mobile No.">
+                    <input type="date" name="" id="" placeholder="D.O.B">
+                    <div class="gender">
+                        <label for="gender">
+                        MALE<input type="radio" name="gender" id="gender">
+                        FEMALE<input type="radio" name="gender" id="gender">
+                    </label>
+                    </div>
+                    <div>
+                        <div class="COUNTRY">
+                            <select name="" id="" aria-placeholder="Country" onchange="populate(this.id,'selectstate')">
+                                <option value="">india</option>
+                                <option value="">pakistan</option>
+                                <option value="">nepal</option>
+                                <option value="">srilanka</option>
+                                <option value="">bhutan</option>
+                                <option value="">bangladesh</option>
+                            </select>
+                        </div>
+                        <!-- <div class="state">
+                            <select name="selectstate" id="selectstate" aria-placeholder="State">
+
+                            </select>
+                        </div> -->
+                        <input type="text" name="" id="" placeholder="Pincode">
+                    </div>
+                    <input type="text" name="" id="" placeholder="Permenent Address">
+                    <input type="password" name="" id="" placeholder="Password">
+                    <!-- <div class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <p> i agree .</p>
+                    </div> -->
+                    <input  class ="submit"type="submit" value=" REQUEST REGISTRATION">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- <script>
+        function populate(s1, s2) {
+            var s1 = document.getElementById(s1);
+            var s2 = document.getElementById(s2);
+
+            s2.innerhtml = ""
+            if (s1.value == "india") {
+                var optionarray = ['Andhra Pradesh',
+                    'Arunachal Pradesh',
+                    'Assam',
+                    'Bihar',
+                    'Chhattisgarh',
+                    'Goa',
+                    'Gujarat',
+                    'Haryana',
+                    'Himachal',
+                    'Jammu & Kashmir',
+                    'Jharkhand',
+                    'Karnataka',
+                    'Kerala',
+                    'Madhya Pradesh',
+                    'Maharashtra',
+                    'Manipur',
+                    'Meghalayaon',
+                    'Mizoram',
+                    'Nagaland',
+                    'Orissa',
+                    'Punjab',
+                    'Rajasthan',
+                    'Sikkim',
+                    'Tamil Nadu',
+                    'Telangana',
+                    'Tripura',
+                    'Uttar Pradesh'
+                    , 'Uttarakhand'
+                    , 'West Bengal'
+                ]
+
+            }
+            else{""}
+            for (var option in optionarray)
+            {
+                var pair = optionarray[option].split('|');
+                var newoption = document.createElement("option") ;
+
+                newoption.value =pair[0] ;               
+                newoption.innerHTML =pair[1] ;
+                s2.options.add(newoption)  ;             
+
+            }
+
+        }
+    </script> -->
+</body>
+
+</html>

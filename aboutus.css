@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background:url('background.jpeg') no-repeat center center/cover;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  .feature .featurecontainer{display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.feature .featurecontainer .daba{
+    flex: .5 .3 20rem;
+    margin: 3rem;
+    overflow:hidden;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1 rgba(0, 0,0, 0.9);
+    height: 25rem;
+}
+.feature .featurecontainer .daba img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.feature .featurecontainer .daba .information{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255,255, 0.8);
+    text-align: center;
+    transform: scale(1.3);
+    opacity: 0;
+}
+.feature .featurecontainer .daba .information h3{
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
+}
+.feature .featurecontainer .daba .information p{
+    font-size: 1rem;
+    color: grey;
+    padding: 1rem;
+}
+.feature .featurecontainer .daba:hover .information {
+    transform: scale(1);
+    opacity: 1;
+}
+.feature .featurecontainer .daba:hover .img {
+    transform: scale(1.3);
+    
+}
+.daba a{
+    
+    width: 10rem;
+    height: 2rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    border-radius: .5rem;
+    border: .1rem solid black;
+    margin: .5rem;
+    text-transform: capitalize;
+}
+.daba a:hover{
+    background: rgb(211, 73, 73);
+
+}
+.mainheading{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.mainheading h1{
+    font-size: 2rem;
+    color:black;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+.chatka{
+    margin-top: 1rem;
+    border: .1rem solid black;
+    font-size: .7rem;
+    padding: .2rem;
+    background: none;
+    align-items: center;
+
+}
+.flex{
+    display:flex;
+    flex-direction: row;
+}
+.nostyle a{
+    border: none;
+    text-transform: lowercase;
+
+}
+.nostyle a:hover{
+    border: none;
+    background: none;
+
+    
+}
+.navbar{ 
+    display: flex;
+    width: 85%;
+    padding: 35px;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+/* .navbar ul{ 
+    display: flex;
+   
+
+} */
+.navbar ul li { 
+    list-style: none;
+   
+    margin: 0 20px;
+    display: inline-block;
+    position: relative;
+
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:chartreuse;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.nitin{
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+}
